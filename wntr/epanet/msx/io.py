@@ -852,6 +852,8 @@ def MsxBinFile(filename, wn, res = None):
     if res is None:
         from wntr.sim.results import SimulationResults
         res = SimulationResults()
+        res.node = {} ## otherwise the setting of [species] will throw NoneType error
+        res.link = {} 
     with open(filename, "rb") as fin:
         ftype = "=f4"
         idlen = 32

@@ -75,15 +75,19 @@ temp*
 *.pyd
 *.pyc
 *.egg
-*.ipynb
+#*.ipynb
 *.html
 *.pickle
 *.xlsx
+
 
 examples/*.inp
 examples/*.csv
 examples/*.json
 examples/*.geojson
+### Net3_ subfolders are created when running some examples
+examples/Net3_*
+examples/*.msx
 wntr/tests/*.png
 wntr/tests/*.tif
 
@@ -99,3 +103,8 @@ wntr/sim/aml/*.dylib
 wntr/sim/network_isolation/*.so
 wntr/sim/network_isolation/*.dll
 wntr/sim/network_isolation/*.dylib
+
+
+## Created during Jupyter examples
+examples/test_MSX/*.json
+examples/test_MSX/*.msx
